@@ -1,0 +1,64 @@
+h1 {
+  font-style: Courier;
+  font-weight: bold;
+  color: rgb(255, 80, 80);
+}
+table {
+  width: 100%;
+}
+th {font-style:Courier;
+  font-weight:bold;
+  font-size: 14pt;
+  color:rgb(255, 204, 204);
+  text-align:center;
+  background-color:rgb(204, 102, 153);
+  border: .75px solid;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+td {
+  background-color: rgb(235, 153, 153);
+  text-align: center;
+}
+img {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  font-style: Courier;
+  font-weight: bold;
+}
+a:link {
+  color: rgb(255, 80, 80);
+}
+a:visited {
+  color: rgb(204, 0, 102);
+}
+a:hover {
+  cursor: pointer;
+}
+a:active {
+  color: rgb(204, 51, 153);
+}
+caption {
+  font-style: Courier;
+  font-weight: bold;
+  font-size: 22pt;
+  color: rgb(255, 80, 80);
+}
+dt {
+  font-style: Courier;
+  font-weight: bold;
+  font-size: 14pt;
+  color: rgb(204, 0, 102);
+}
+dd {
+  font-style: Courier;
+  font-weight: bold;
+  font-size: 12pt;
+  color: rgb(255, 80, 80);
+}

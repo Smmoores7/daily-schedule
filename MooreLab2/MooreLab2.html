@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Schedule for Name - Account number - Quarter, Year</title>
+  <link rel="stylesheet" href="css/styleLab2.css">
+</head>
+<body>
+  <h1>Table Basics</h1>
+  <dl>
+    <dt>How to define a table?</dt>
+    <dd>You define a table using the &lt;table&gt; &lt;/table&gt; tags and then adding rows using the &lt;tr&gt; &lt;/tr&gt; tags as well as adding data with the &lt;td&gt; &lt;/td&gt; tags respectively.</dd>
+    <dt>Using &lt;tr&gt;</dt>
+    <dd>This tag is used to define the rows of your table. It will contain one or more &lt;th&gt; &lt;/th&gt; tags and &lt;td&gt; &lt;/td&gt; tags respectively.</dd>
+    <dt>Using &lt;th&gt;</dt>
+    <dd>This tag is used to define the header cells of your table. Its text will be bold and centered by default.</dd>
+    <dt>Using &lt;td&gt;</dt>
+    <dd>This tag is used to define the data cells of your table. Its text will be regular and left-aligned by default.</dd>
+    <dt>Using &lt;thead&gt;</dt>
+    <dd>This tag is used to group header content within your table. It's used in conjunction with &lt;tbody&gt; &lt;/tbody&gt; tags and &lt;tfoot&gt; &lt;/tfoot&gt; tags respectively. This tag must have at least one &lt;tr&gt; &lt;/tr&gt; tags inside.</dd>
+    <dt>Using &lt;tfoot&gt;</dt>
+    <dd>This tag is used to group footer content within your table. It's used in conjunction with &lt;thead&gt; &lt;/thead&gt; tags and &lt;tbody&gt; &lt;/tbody&gt; tags respectively. This tag must have at least one &lt;tr&gt; &lt;/tr&gt; tags inside like the tag above.</dd>
+    <dt>Using &lt;caption&gt;</dt>
+    <dd>This tag is used to define a table caption. It must be inserted right after the &lt;table&gt; &lt;/table&gt; tags. Its text will be center-aligned above a table by default.</dd>
+    <dt>What is the difference between colspan and rowspan?</dt>
+    <dd>Colspan makes a cell span over columns (vertical merging of cells) while rowspan makes a cell span over rows (horizontal merging of cells).</dd>
+    <dt>What is the difference between cells spacing and padding?</dt>
+    <dd>Cell padding alters the space between the cell edges and the cell content while cell spacing alters the space between each cell.</dd>
+    <dt>How do you define table borders using CSS?</dt>
+    <dd>You would use the border property as your property under the tables selector followed by a numerical value like 1px and a thickness like solid.</dd>
+    <dt>How do you control border widths using CSS?</dt>
+    <dd>You would use the border-width property under the table selector followed by a value that determines the thickness using thin, medium, and thick.</dd>
+  </dl>
+<table>
+  <caption><b>My Daily Schedule</b></caption>
+  <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+  </tr>
+  <tr>
+    <th>11:00-12:00</th>
+    <td>
+    <a href="https://mathweb.ucsd.edu/~math18/">MATH 18 Lecture</a>
+    <img src="https://i.pinimg.com/originals/2a/b0/26/2ab0269e20645358cf456e47634ebd40.jpg" alt="Not so cute Math" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://mathweb.ucsd.edu/~math18/">MATH 18 Lecture</a>
+    <img src="https://i.pinimg.com/originals/2a/b0/26/2ab0269e20645358cf456e47634ebd40.jpg" alt="Not so cute Math" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://mathweb.ucsd.edu/~math18/">MATH 18 Lecture</a>
+    <img src="https://i.pinimg.com/originals/2a/b0/26/2ab0269e20645358cf456e47634ebd40.jpg" alt="Not so cute Math" width="75" height="75">
+    </td>
+    <td><a href="https://transportation.ucsd.edu/campus/shuttles/grocery-c.html">Grocery Shopping</a>
+    <img src="https://i.etsystatic.com/10739794/r/il/9dc790/1276372688/il_fullxfull.1276372688_ecfo.jpg" alt="Yay Food!" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>12:00-1:00</th>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://japan.ucsd.edu/courses/courses-offerings.html">JAPN 20A Lecture</a>
+    <img src="https://www.pngitem.com/pimgs/m/298-2987020_kawaii-japan-bunny-freetoedit-clipart-png-download-anime.png" alt="Konnichiwa!" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://japan.ucsd.edu/courses/courses-offerings.html">JAPN 20A Lecture</a>
+    <img src="https://www.pngitem.com/pimgs/m/298-2987020_kawaii-japan-bunny-freetoedit-clipart-png-download-anime.png" alt="Konnichiwa!" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://zzanghotdog.com/">Lunch</a>
+    <img src="https://media.tenor.com/images/3fa8d6949702ffd11afd6bdca313d279/tenor.png" alt="Nom Nom" weight="75" height="75">
+    </td>
+    <td><a href="https://www.yelp.com/search?find_desc=Restaurants&find_loc=San+Diego%2C+CA">Lunch</a>
+    <img src="https://media.tenor.com/images/3fa8d6949702ffd11afd6bdca313d279/tenor.png" alt="Nom Nom" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>1:00-2:00</th>
+    <td><a href="https://japan.ucsd.edu/courses/courses-offerings.html">JAPN 20A Tutorial</a>
+    <img src="https://www.pngitem.com/pimgs/m/298-2987020_kawaii-japan-bunny-freetoedit-clipart-png-download-anime.png" alt="Konnichiwa!" width="75" height="75">
+    </td>
+    <td><a href="https://japan.ucsd.edu/courses/courses-offerings.html">JAPN 20A Lecture</a>
+    <img src="https://www.pngitem.com/pimgs/m/298-2987020_kawaii-japan-bunny-freetoedit-clipart-png-download-anime.png" alt="Konnichiwa!" width="75" height="75">
+    </td>
+    <td><a href="https://japan.ucsd.edu/courses/courses-offerings.html">JAPN 20A Tutorial</a>
+    <img src="https://www.pngitem.com/pimgs/m/298-2987020_kawaii-japan-bunny-freetoedit-clipart-png-download-anime.png" alt="Konnichiwa!" width="75" height="75">
+    </td>
+    <td><a href="https://japan.ucsd.edu/courses/courses-offerings.html">JAPN 20A Lecture</a>
+    <img src="https://www.pngitem.com/pimgs/m/298-2987020_kawaii-japan-bunny-freetoedit-clipart-png-download-anime.png" alt="Konnichiwa!" width="75" height="75">
+    </td>
+    <td><a href="https://japan.ucsd.edu/courses/courses-offerings.html">JAPN 20A Tutorial</a>
+    <img src="https://www.pngitem.com/pimgs/m/298-2987020_kawaii-japan-bunny-freetoedit-clipart-png-download-anime.png" alt="Konnichiwa!" width="75" height="75">
+    </td>
+    <td><a href="https://www.verywellmind.com/power-napping-health-benefits-and-tips-stress-3144702">Take a nap</a>
+    <img src="https://media.istockphoto.com/vectors/cute-cartoon-sleeping-corgi-vector-id1199032290?k=20&m=1199032290&s=170667a&w=0&h=U0H5VKhgruLaKWm9EWZZqGUHM4__xJfZe2vcge3cX-k=" alt="ZZZ" width="75" height="75">
+    </td>
+    <td><a href="https://www.verywellmind.com/power-napping-health-benefits-and-tips-stress-3144702">Take a nap</a>
+    <img src="https://media.istockphoto.com/vectors/cute-cartoon-sleeping-corgi-vector-id1199032290?k=20&m=1199032290&s=170667a&w=0&h=U0H5VKhgruLaKWm9EWZZqGUHM4__xJfZe2vcge3cX-k=" alt="ZZZ" width="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>2:00-3:00</th>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>3:00-4:00</th>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://registrar.ucsd.edu/catalog/13-14/courses/COGS.html">COGS 17 Lecture</a>
+    <img src="https://i.pinimg.com/736x/c4/dd/3f/c4dd3f0696ccc6790f6ee84ff22ae636.jpg" alt="Big Brain" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://registrar.ucsd.edu/catalog/13-14/courses/COGS.html">COGS 17 Lecture</a>
+    <img src="https://i.pinimg.com/736x/c4/dd/3f/c4dd3f0696ccc6790f6ee84ff22ae636.jpg" alt="Big Brain" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>4:00-5:00</th>
+    <td><a href="https://www.verywellmind.com/power-napping-health-benefits-and-tips-stress-3144702">Take a nap</a>
+    <img src="https://media.istockphoto.com/vectors/cute-cartoon-sleeping-corgi-vector-id1199032290?k=20&m=1199032290&s=170667a&w=0&h=U0H5VKhgruLaKWm9EWZZqGUHM4__xJfZe2vcge3cX-k=" alt="ZZZ" width="75" height="75">
+    </td>
+    <td><a href="https://registrar.ucsd.edu/catalog/13-14/courses/COGS.html">COGS 17 Lecture</a>
+    <img src="https://i.pinimg.com/736x/c4/dd/3f/c4dd3f0696ccc6790f6ee84ff22ae636.jpg" alt="Big Brain" width="75" height="75">
+    </td>
+    <td><a href="https://www.verywellmind.com/power-napping-health-benefits-and-tips-stress-3144702">Take a nap</a>
+    <img src="https://media.istockphoto.com/vectors/cute-cartoon-sleeping-corgi-vector-id1199032290?k=20&m=1199032290&s=170667a&w=0&h=U0H5VKhgruLaKWm9EWZZqGUHM4__xJfZe2vcge3cX-k=" alt="ZZZ" width="75" height="75">
+    </td>
+    <td><a href="https://registrar.ucsd.edu/catalog/13-14/courses/COGS.html">COGS 17 Lecture</a>
+    <img src="https://i.pinimg.com/736x/c4/dd/3f/c4dd3f0696ccc6790f6ee84ff22ae636.jpg" alt="Big Brain" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>5:00-6:00</th>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>6:00-7:00</th>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Lecture</a>
+    <img src="https://i.pinimg.com/originals/5e/0a/44/5e0a443a972750adbf6882f159335a8d.jpg" alt="Women in STEM" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Lecture</a>
+    <img src="https://i.pinimg.com/originals/5e/0a/44/5e0a443a972750adbf6882f159335a8d.jpg" alt="Women in STEM" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://mykoreankitchen.com/">Dinner</a>
+    <img src="https://i.dlpng.com/static/png/6566416_preview.png" alt="Nom Nom pt.2" width="75" height="75">
+    </td>
+    <td><a href="https://mykoreankitchen.com/">Dinner</a>
+    <img src="https://i.dlpng.com/static/png/6566416_preview.png" alt="Nom Nom pt.2" width="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>7:00-8:00</th>
+    <td><a href="https://mykoreankitchen.com/">Dinner</a>
+    <img src="https://i.dlpng.com/static/png/6566416_preview.png" alt="Nom Nom pt.2" width="75" height="75">
+    </td>
+    <td><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Lecture</a>
+    <img src="https://i.pinimg.com/originals/5e/0a/44/5e0a443a972750adbf6882f159335a8d.jpg" alt="Women in STEM" width="75" height="75">
+    </td>
+    <td><a href="https://mykoreankitchen.com/">Dinner</a>
+    <img src="https://i.dlpng.com/static/png/6566416_preview.png" alt="Nom Nom pt.2" width="75" height="75">
+    </td>
+    <td><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Lecture</a>
+    <img src="https://i.pinimg.com/originals/5e/0a/44/5e0a443a972750adbf6882f159335a8d.jpg" alt="Women in STEM" width="75" height="75">
+    </td>
+    <td><a href="https://zzanghotdog.com/">Dinner</a>
+    <img src="https://i.dlpng.com/static/png/6566416_preview.png" alt="Nom Nom pt.2" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>8:00-9:00</th>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://mykoreankitchen.com/">Dinner</a>
+    <img src="https://i.dlpng.com/static/png/6566416_preview.png" alt="Nom Nom pt.2" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://mykoreankitchen.com/">Dinner</a>
+    <img src="https://i.dlpng.com/static/png/6566416_preview.png" alt="Nom Nom pt.2" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>9:00-10:00</th>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>10:00-11:00</th>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>11:00-12:00</th>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+    <td><a href="https://aah.ucsd.edu/content-tutoring/index.html">Study</a>
+    <img src="https://cdn130.picsart.com/286412051011211.png" alt="Not so Fun Studying" weight="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>12:00-1:00</th>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+    <td><a href="https://www.netflix.com/">Watch TV</a>
+    <img src="https://i.pinimg.com/736x/fa/71/95/fa7195d9c82787c5e742cb4b663180eb.jpg" alt="Couch Potato" width="75" height="75">
+    </td>
+  </tr>
+  <tr>
+    <th>1:00-10:00</th>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+    <td><a href="https://www.youtube.com/watch?v=yIQd2Ya0Ziw">Sleep</a>
+    <img src="https://t3.ftcdn.net/jpg/03/26/67/68/360_F_326676846_4aNjRs9ZALapkB5JM5OZolUinB1ipB2j.jpg" alt="Good Sleep" width="75" height="75">
+    </td>
+  </tr>
+</table>
+</body>
+</html>
